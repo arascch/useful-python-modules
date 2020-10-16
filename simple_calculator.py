@@ -13,3 +13,25 @@ num1 = input("what is the first number?")
 num2 = input("what is the second number?")
 print("first number:{}".format(num1))
 print("the second number:{}".format(num2))
+
+#try/except for mathematical operation
+
+try:
+    num1 , num2 = float(num1) , float(num2)
+    if operation == "add":
+        result = num1+num2
+        print("{} + {} = {}".format(num1 , num2, result))
+    elif operation == "subtract":
+        result = num1 - num2
+        print("{} - {} = {}".format(num1, num2,result))
+    elif operation == "multiply":
+        result = num1 * num2
+        print("{} * {} = {}".format(num1, num2, result))
+    elif operation == "divide":
+        result = num1/num2
+        print("{} / {} = {}".format(num1, num2,result))
+    else:
+        print("sorry , but '{}' is not an option".format(operation))
+except :
+    print("Error: Improper numbers used. please try again")
+    
