@@ -31,7 +31,8 @@ def showCart():
 
 #the main function for do every thing user need to do and loops until the user quits
 def clearCart():
-    cart.remove()
+    cart.clear()
+    print("all items delet from the cart")
 
 
 def main():
