@@ -1,5 +1,5 @@
 import csv
-from ipython.display import clear_output
+from IPython.display import clear_output
 
 #user registeration
 def registerUser():
