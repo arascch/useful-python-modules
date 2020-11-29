@@ -13,8 +13,39 @@ class blackjack():
         for suit in self.suits:
             for value in self.values:
                 self.deck.append((value , suit))
+    
+    def pullCard(self):
+        return self.deck.pop(randint(0 , len(self.deck)-1))
+
+#create a class for the dealer and player objects
+class Player():
+    def __init__(self,name):
+        self.name = name
+        self.hand = []
+
+    def addCard(self , card):
+        self.hand.append(card)
+
+    def showHand(self , dealer_start = True):
+        print("\n{}".format(self.name))
+        print("================")
+        for i in range(len(self.hand)):
+            if self.name == "dealer" and i==0 and dealer_start:
+                print("- of -")
+            else:
+                card = self.hand[ i ]
+                print("{} of {}".format(card[0] , card[1]))
 
 game = blackjack()
 game.makeDeck()
-print(game.deck)
+name = input("whats your name?")
+player = Player(name)
+dealer = Player("dealer")
+
+for i in range(2):
+    player.addCard(game.pullCard())
+    dealer.addCard(game.pullCard())
+
+player.showHand()
+dealer.showHand()
 
