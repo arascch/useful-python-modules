@@ -69,3 +69,33 @@ for i in range(2):
 player.showHand()
 dealer.showHand()
 
+player_bust = False #for keep track of player going over 21
+while input("would you like to stay or hit?").lower()!="stay":
+    clear_output()
+    player.addCard(game.pullCard())
+    #show both hands using method
+    player.showHand()
+    dealer.showHand()
+    #check if over 21
+    if Player.calcHand()>21:
+        player_bust = True
+        print("you lose!")
+        break
+clear_output()
+
+player.showHand()
+dealer.showHand(False)
+
+#calculate a winner 
+if player_bust:
+    print("you busted , better luck next time!")
+elif dealer_bust:
+    print("the dealer busted , you win")
+elif dealer.calcHand(False) > player.calcHand():
+    print("dealer has higher cards , you lose!")
+elif dealer.calcHand(False) < player.calcHand():
+    print("you beat the dealer! Congrats!")
+else:
+    print("you Pushed , no one wins")
+
+
