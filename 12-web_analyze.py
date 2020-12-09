@@ -7,9 +7,10 @@ from Ipython.display import clear_output
 def scrape(title):
     page = requests.get(site)
     soup = BeautifulSoup(page.content , "html.parser")
-    print(soup.prettify())
+    text = soup.find(text=True)
+    print(text)
 
-    
+
 while input("what you like to scrape a website(y/n)?")=="y":
     try:
         clear_output()
