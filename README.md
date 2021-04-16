@@ -13,3 +13,4 @@ this repository consist of :
 10- bubble sort function with python
 11- insertion sort with python
  
+This List Maybe update's sometimes so checking it when you need something useful
