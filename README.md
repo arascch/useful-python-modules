@@ -1,4 +1,4 @@
-# simple_python_projects<br>
+# useful python modules for everyone <br>
 in this repository we prepared the simple project for everyone Want to learn programming with python language
 this repository consist of :<br>
 1- guess number <br>
