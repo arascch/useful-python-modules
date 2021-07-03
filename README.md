@@ -12,8 +12,8 @@ this repository consist of :<br>
 9- binary search function with python<br>
 10- bubble sort function with python<br>
 11- insertion sort with python<br>
-12- Web site analyzer
-13- Rolling the dice
-14- Magic 8 Ball (answer to your wishes)
+12- Web site analyzer<br>
+13- Rolling the dice<br>
+14- Magic 8 Ball (answer to your wishes)<br>
  <br>
 *This List Maybe update's sometimes so checking it when you need something useful*<br>
