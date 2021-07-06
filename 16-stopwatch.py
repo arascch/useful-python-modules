@@ -21,5 +21,5 @@ def counter_label(label):
             label.after(1000,count)
             counter+=1
     count()
-
+#incomplete and wait for complete version
  
