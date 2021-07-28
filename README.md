@@ -19,4 +19,4 @@ this repository consist of :<br>
 16- simple stopwatch<br>
 17- Simple Contact book for Terminal<br>
  <br>
-*This List Maybe update's sometimes so checking it when you need something useful*<br>
+*This List Maybe update's sometimes ,so checking it when you need something useful*<br>
